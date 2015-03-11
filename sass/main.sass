@@ -1,0 +1,109 @@
+@import "bourbon/bourbon"
+
+body
+  font-family: "Raleway", sans-serif
+  font-weight: normal
+  font-size: 14px
+  min-width: 320px
+  position: relative
+  line-height: 1.42857
+  -webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: red
+body input:required:valid,
+body textarea:required:valid
+  color: green
+
+.header
+  position: fixed
+  padding-top: 2px
+  top: 0
+  left: 0
+  width: 100%
+  height: 50px
+  z-index: 1000
+  .to_top
+    display: inline-block
+    position: absolute
+    right: 30px
+    top: 3px
+    line-height: 50px
+    font-size: 24px
+    z-index: 1000
+  .toggle_menu
+    font-size: 24px
+    line-height: 50px
+    position: absolute
+    top: 3px
+    left: 30px
+    display: none
+    cursor: pointer
+    z-index: 1000
+  .header_menu
+    margin-left: 30px
+    +transition(.3s)
+    li
+      float: left
+      line-height: 50px
+      padding-right: 30px
+.teaser
+  width: 100%
+  position: relative
+  z-index: 100
+  video
+    width: 100%
+  #top
+    position: absolute
+    top: 0
+    visibility: hidden
+
+
+//$breakpoint-small: 480px;  For widths more than 480px
+//$breakpoint-medium: 768px;  For width more than 768px
+//$breakpoint-large: 960px;  For width more than 960px
+//$breakpoint-xlarge: 1220px;  For width more than 1220px
+
+@media (max-width: 959px)
+  .teaser video
+    display: none
+  .teaser
+    background: url("../images/teaser-bg-big.jpg") 0 0 no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+
+@media (max-width: 767px)
+  .header
+    .toggle_menu
+      display: block
+      &.active
+        opacity: .5
+    .header_menu
+      display: none
+      &.active
+        position: fixed
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.7)
+        z-index: 500
+        right: 0
+        top: 0
+        margin: 0
+        display: block
+        ul
+          margin-top: 120px
+      li
+        float: none
+        line-height: 75px
+        text-align: center
+        padding: 0
+        &:hover
+          background-color: rgba(255,255,255, .1)
+
+  .teaser
+    background: url("../images/teaser-bg.jpg") 0 0 no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+
+
