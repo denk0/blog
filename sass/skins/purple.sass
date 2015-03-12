@@ -1,6 +1,6 @@
 @import "../bourbon/bourbon"
 
-$color: #a90dff
+$color: #1e8ab1
 //Theme skin
 $text_color: #fefefe
 $main_color: #3a3a3a
@@ -18,8 +18,16 @@ $bg_light: #bfbfbf
       a
         color: $text_color
         +kerning(1)
+        &:hover
+          color: $color
   .to_top
     a
       color: $text_color
   a:hover
-    text-shadow: rgba(225,225,225,.5)
+    color: $color
+
+.top_text
+  .blog_tittle
+    +kerning(7)
+    span
+      color: $color

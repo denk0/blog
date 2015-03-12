@@ -5,9 +5,16 @@
   .header .header_menu li a {
     color: #fefefe;
     letter-spacing: 1px; }
+    .header .header_menu li a:hover {
+      color: #1e8ab1; }
   .header .to_top a {
     color: #fefefe; }
   .header a:hover {
-    text-shadow: rgba(225, 225, 225, 0.5); }
+    color: #1e8ab1; }
+
+.top_text .blog_tittle {
+  letter-spacing: 7px; }
+  .top_text .blog_tittle span {
+    color: #1e8ab1; }
 
 /*# sourceMappingURL=purple.css.map */
