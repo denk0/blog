@@ -15,8 +15,10 @@
 .top_text .blog_tittle {
   letter-spacing: 7px;
   color: #fefefe; }
+.top_text .big_line {
+  background-color: #fefefe; }
 .top_text .blog_description {
-  color: #2b75d8;
+  color: #fefefe;
   letter-spacing: 3px; }
 
 /*# sourceMappingURL=purple.css.map */
