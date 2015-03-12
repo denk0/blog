@@ -3,8 +3,8 @@
 $color: #2b75d8
 //Theme skin
 $text_color: #fefefe
-$main_color: #3a3a3a
-$bg_light: #bfbfbf
+$bg_dark: #3a3a3a
+$bg_light: #9c9c9c
 
 @mixin kerning($kerning)
   letter-spacing: $kerning + px
@@ -35,3 +35,6 @@ $bg_light: #bfbfbf
   .blog_description
     color: $text_color
     +kerning(3)
+    
+.section_about
+  background-color: $bg_light

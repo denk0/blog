@@ -8,6 +8,7 @@ body
   position: relative
   line-height: 1.42857
   -webkit-font-smoothing: antialised
+  overflow-y: scroll
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -15,14 +16,11 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
   color: green
-
 .header
   position: fixed
-  padding-top: 2px
   top: 0
-  left: 0
+  padding-top: 2px
   width: 100%
-  height: 50px
   z-index: 1000
   a
     +transition(.2s)
@@ -51,16 +49,18 @@ body textarea:required:valid
       line-height: 50px
       padding-right: 30px
 .teaser
-  width: 100%
   position: relative
-  z-index: 100
+  left: 0
+  min-height: 100%
+  top: 0
+  right: 0
+  z-index: 10
   video
     width: 100%
-    z-index: -100
-  #top
     position: absolute
     top: 0
-    visibility: hidden
+    left: 0
+    z-index: -100
   .top_text
     position: absolute
     top: 100px
@@ -86,8 +86,9 @@ body textarea:required:valid
       margin-top: 30px
       opacity: .7
 
-
-
+.footer
+  z-index: 200
+  padding: 4000px 0
 
 //$breakpoint-small: 480px;  For widths more than 480px
 //$breakpoint-medium: 768px;  For width more than 768px

@@ -28,17 +28,17 @@
         </div>
         <nav class="header_menu animated">
             <ul>
-                <li><a href="#">Обо мне</a></li>
-                <li><a href="#">Сладкая выпечка</a></li>
-                <li><a href="#">Несладкая выпечка</a></li>
-                <li><a href="#">Связаться со мной</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#sweet">Сладкая выпечка</a></li>
+                <li><a href="#salty">Несладкая выпечка</a></li>
+                <li><a href="#contacts">Связаться со мной</a></li>
             </ul>
         </nav>
-        <div class="to_top"><a href="#top"><i class="icon-basic-home"></i></a></div>
+        <div class="to_top"><a href="#teaser"><i class="icon-basic-home"></i></a></div>
     </header>
-    <section class="teaser">
-        <div id="top">top of page</div>
-        <video #video autoplay muted loop poster="images/teaser-bg.jpg">
+<div class="wrap">
+    <div id="teaser" class="teaser">
+        <video autoplay="autoplay" muted="muted" loop="loop" poster="images/teaser-bg.jpg">
             <source src="video/teaser-bg.mp4" type="video/mp4">
         </video>
         <div class="top_text">
@@ -52,11 +52,12 @@
                 Искусство выпечки
             </h3>
         </div>
-    </section>
-
-    <section class="about">
-
-    </section>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="copyright">С <i class="fa fa-heart"></i> с Полтавы. </div>
+        <div class="socials"></div>
+    </footer>
 
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
