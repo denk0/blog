@@ -3,8 +3,8 @@
 $color: #2b75d8
 //Theme skin
 $text_color: #fefefe
-$bg_dark: #3a3a3a
-$bg_light: #9c9c9c
+$bg_dark: #191919
+$bg_light: #cfcfcf
 
 @mixin kerning($kerning)
   letter-spacing: $kerning + px
@@ -38,3 +38,26 @@ $bg_light: #9c9c9c
     
 .section_about
   background-color: $bg_light
+
+.bg_dark
+  background-color: $bg_dark
+  background: url("../../images/noize-dark.png")
+  color: $text_color
+
+.bg_light
+  background-color: $bg_light
+  background: url("../../images/noize-light.png")
+  color: $bg_dark
+
+.recipes_item_content
+  color: $text_color
+  a
+    border: 1px solid $color
+    color: $text_color
+    +transition(.3s)
+    &:hover
+      background-color: $color
+  h3
+    +kerning(1)
+.recipe_description
+  

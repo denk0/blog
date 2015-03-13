@@ -51,7 +51,6 @@ body textarea:required:valid
 .teaser
   position: relative
   left: 0
-  min-height: 100%
   top: 0
   right: 0
   z-index: 10
@@ -86,9 +85,106 @@ body textarea:required:valid
       margin-top: 30px
       opacity: .7
 
+section
+  padding: 70px 0
+  z-index: 100
+  position: relative
+
+.section_about
+
+.section_sweet,
+.section_salty
+  .container
+    .controls
+      padding: 2%
+    label
+      font-weight: 300
+      margin: 0 .4em 0 0
+    h3
+      font-size: 20px
+      font-weight: 500
+      color: white
+      margin-bottom: .5em
+    button
+      display: inline-block
+      padding: .4em .8em
+      background: #666
+      border: 0
+      color: #ddd
+      font-size: 16px
+      font-weight: 300
+      border-radius: 4px
+      cursor: pointer
+    button.active
+      background: #68b8c4
+    button:focus
+      outline: 0 none
+    button + label
+      margin-left: 1em
+    @media all and (min-width: 640px)
+    .container .mix
+      width: 25%
+
+.recipes_item
+  display: none
+  padding: 0
+  position: relative
+  .recipes_item_content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.8)
+    text-align: center
+    opacity: 0
+    padding-top: 15%
+    +transition(.5s)
+  &:hover .recipes_item_content
+    opacity: 1
+    padding-top: 20%
+  h3
+    text-transform: uppercase
+  a
+    padding: 5px 10px
+    font-size: 14px
+    display: inline-block
+.recipes_description
+  width: 80%
+  position: relative
+  margin: auto
+  .mfp-close
+    position: absolute
+    top: 0
+    right: 0
+  .modal-box-content
+    padding: 20px
+    .recipe_photo
+      text-align: center
+      margin-bottom: 10px
+      img
+        display: inline-block
+      .author
+        font-size: 12px
+        opacity: 9
+    h3
+      text-align: center
+      font-size: 30px
+      font-weight: 600
+      line-height: 40px
+      margin-bottom: 10px
+    .comment
+      margin-top: 10px
+
+
+
+
+
+
+
 .footer
   z-index: 200
-  padding: 4000px 0
+  padding: 40px 0
 
 //$breakpoint-small: 480px;  For widths more than 480px
 //$breakpoint-medium: 768px;  For width more than 768px
@@ -130,10 +226,11 @@ body textarea:required:valid
         padding: 0
         &:hover
           background-color: rgba(255,255,255, .1)
-
   .teaser
     background: url("../images/teaser-bg.jpg") 0 0 no-repeat
     -webkit-background-size: cover
     background-size: cover
 
-
+@media (min-width: 960px)
+  .teaser
+    min-height: 750px

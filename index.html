@@ -36,16 +36,16 @@
         </nav>
         <div class="to_top"><a href="#teaser"><i class="icon-basic-home"></i></a></div>
     </header>
-<div class="wrap">
-    <div id="teaser" class="teaser">
+
+    <div id="teaser" class="teaser bg_dark">
         <video autoplay="autoplay" muted="muted" loop="loop" poster="images/teaser-bg.jpg">
             <source src="video/teaser-bg.mp4" type="video/mp4">
         </video>
         <div class="top_text">
     <h1 class="blog_tittle">
-    вкус
-        твоего
-            настроения...
+ вкус
+     твоего
+         настроения...
             </h1>
             <div class="big_line"></div>
             <h3 class="blog_description">
@@ -53,11 +53,158 @@
             </h3>
         </div>
     </div>
-</div>
-    <footer class="footer">
-        <div class="copyright">С <i class="fa fa-heart"></i> с Полтавы. </div>
-        <div class="socials"></div>
+
+    <section id="about" class="section_about bg_dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section_tittle">Добро пожаловать в мой мир</h2>
+                    <p class="section_description">наполненный ароматами свежей выпечки,ванили,шоколада и корицы!</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="photo">
+                        <img class="img-responsive" src="images/photo.jpg" alt="photo"/>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-6">
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <p class="about_content">
+                        Меня зовут Таня, я студентка из Полтавы.
+                        Мой блог посвящён вкусному и красивому миру выпечки.
+                        Здесь я собираю самые вкусные рецепты и хочу подельться ими со всеми, кто этого желает.
+                        Я надеюсь, что вы найдете что-то полезное и интересное для себя здесь.
+                        Буду очень рада познакомиться с вами!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sweet" class="section_sweet bg_light" >
+        <div class="container">
+            <div class="row">
+                <h2 class="section_tittle">Сладкая выпечка</h2>
+                <p class="section_description">что-то про сладкую выпечку</p>
+                <div class="controls">
+                    <button class="filter active" data-filter=".c2>div, .donuts, .cakes, .cookies">Все рецепты</button>
+                    <button class="filter" data-filter=".c2>div,.donuts">Пончики</button>
+                    <button class="filter" data-filter=".c2>div,.cakes">Торты</button>
+                    <button class="filter" data-filter=".c2>div,.cookies">Печенье</button>
+                </div>
+                <div class="container c1">
+                    <div class="mix recipes_item donuts">
+                        <img class="img-responsive" src="images/recipes-images/donut.jpg" alt="Alt" />
+                        <div class="recipes_item_content">
+                            <h3>Название блюда</h3>
+                            <a href="#recipe1" class="popup_content">Читать рецепт</a>
+                        </div>
+                        <div class="hidden">
+                            <div class="recipes_description bg_light" id="recipe1">
+                                <div class="modal-box-content">
+                                    <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Название блюда</h3>
+                                        </div>
+                                        <div class="col-md-4 recipe_photo">
+                                            <img class="img-responsive" src="images/recipes-images/donut.jpg" alt="Alt" />
+                                            <div class="author">
+                                                Добавлено 13.03.2015. Автор: Таня
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p>Ингредиенты: соль морская - 0.25 ч. л., молоко - 1 стакан, сахарная пудра - 1 ст. л., дрожжи сухие - 7 г, мука - 520 г, сахар - 2 ст. л., сахар - 60 г, яйцо - 2 г, масло сливочное - 50 г, масло сливочное - 50 г, масло растительное - 400 г, сливки 33-35% - 300 г, фисташки очищенные несоленые - 60 г, фисташки очищенные несоленые - 60 г</p>
+                                        </div>
+                                        <div class="col-md-12 comment">
+                                            Коментарии
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix recipes_item cakes"></div>
+                    <div class="mix recipes_item cookies"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="salty" class="section_salty bg_dark" >
+        <div class="container">
+            <div class="row">
+                <h2 class="section_tittle">Несладкая выпечка</h2>
+                <p class="section_description">что-то про несладкую выпечку</p>
+                <div class="controls">
+                    <button class="filter active" data-filter=".c1>div, .pirog, .pirog2, .pirog3">Все рецепты</button>
+                    <button class="filter" data-filter=".c1>div,.pirog">Пироги</button>
+                    <button class="filter" data-filter=".c1>div,.pirog2">что-то</button>
+                    <button class="filter" data-filter=".c1>div,.pirog3">еще что-то</button>
+                </div>
+                <div class="container c2">
+                    <div class="mix recipes_item pirog">
+                        <img class="img-responsive" src="images/recipes-images/pirog.jpg" alt="Alt" />
+                        <div class="recipes_item_content">
+                            <h3>Название блюда</h3>
+                            <a href="#recipe2" class="popup_content">Читать рецепт</a>
+                        </div>
+                        <div class="hidden">
+                            <div class="recipes_description bg_light" id="recipe2">
+                                <div class="modal-box-content">
+                                    <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Название блюда</h3>
+                                        </div>
+                                        <div class="col-md-4 recipe_photo">
+                                            <img class="img-responsive" src="images/recipes-images/pirog.jpg" alt="Alt" />
+                                            <div class="author">
+                                                Добавлено 13.03.2015. Автор: Таня
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <p>Ингредиенты: соль морская - 0.25 ч. л., молоко - 1 стакан, сахарная пудра - 1 ст. л., дрожжи сухие - 7 г, мука - 520 г, сахар - 2 ст. л., сахар - 60 г, яйцо - 2 г, масло сливочное - 50 г, масло сливочное - 50 г, масло растительное - 400 г, сливки 33-35% - 300 г, фисташки очищенные несоленые - 60 г, фисташки очищенные несоленые - 60 г</p>
+                                        </div>
+                                        <div class="col-md-12 comment">
+                                            Коментарии
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix recipes_item pirog2"></div>
+                    <div class="mix recipes_item pirog2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg_light">
+        <div class="container">
+            <div class="copyright">С <i class="fa fa-heart"></i> с Полтавы. </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
 
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>

@@ -1,5 +1,15 @@
 $(document).ready(function(){
-    $("a[href*='#']").mPageScroll2id();
+
+    $(function(){
+        $('.container .container').mixItUp();
+    });
+
+    $(".popup_content").magnificPopup({
+        type: "inline",
+        midClick: true
+    });
+
+    $("header a[href*='#']").mPageScroll2id();
 
     function heightDetect() {
         $(".teaser").css("height", $(window).height());
@@ -20,5 +30,12 @@ $(document).ready(function(){
             $(".toggle_menu").toggleClass("active");
         };
     });
+
 });
+
+$(window).resize(function(){
+   var videoSize = $(".teaser video").height();
+   $(".teaser").css({"min-height":videoSize});
+});
+
 
