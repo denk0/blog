@@ -94,34 +94,58 @@ section {
   padding: 70px 0;
   z-index: 100;
   position: relative; }
+  section .section_tittle {
+    font-size: 30px;
+    font-weight: 600; }
+  section .section_description {
+    font-size: 24px;
+    margin-bottom: 10px; }
+  section .short_line {
+    border-radius: 10px;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-left: 20px; }
+
+.section_about .short_line {
+  margin-bottom: 40px; }
+.section_about .photo img {
+  border-radius: 5px; }
+
+.socials {
+  text-align: center; }
+  .socials li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 3px; }
+    .socials li a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      padding: 9px;
+      border-radius: 50%;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      transition: 0.3s; }
+  .socials .about_content {
+    font-size: 16px;
+    line-height: 20px; }
 
 .section_sweet .container .controls,
 .section_salty .container .controls {
   padding: 2%; }
-.section_sweet .container label,
-.section_salty .container label {
-  font-weight: 300;
-  margin: 0 0.4em 0 0; }
-.section_sweet .container h3,
-.section_salty .container h3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
-  margin-bottom: 0.5em; }
 .section_sweet .container button,
 .section_salty .container button {
   display: inline-block;
   padding: 0.4em 0.8em;
-  background: #666;
-  border: 0;
-  color: #ddd;
+  background: transparent;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   border-radius: 4px;
   cursor: pointer; }
-.section_sweet .container button.active,
-.section_salty .container button.active {
-  background: #68b8c4; }
 .section_sweet .container button:focus,
 .section_salty .container button:focus {
   outline: 0 none; }
@@ -189,6 +213,15 @@ section {
 .footer {
   z-index: 200;
   padding: 40px 0; }
+  .footer .copyright {
+    font-size: 18px;
+    line-height: 45px;
+    margin-top: 2px;
+    float: left; }
+    .footer .copyright .fa-heart {
+      color: red; }
+  .footer .socials {
+    float: right; }
 
 @media (max-width: 959px) {
   .teaser video {
@@ -199,6 +232,9 @@ section {
     -webkit-background-size: cover;
     background-size: cover; } }
 @media (max-width: 767px) {
+  .socials {
+    margin: 10px auto; }
+
   .header .toggle_menu {
     display: block; }
     .header .toggle_menu.active {

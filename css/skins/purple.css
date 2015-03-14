@@ -6,11 +6,11 @@
     color: #fefefe;
     letter-spacing: 1px; }
     .header .header_menu li a:hover {
-      color: #2b75d8; }
+      color: #3c9fd8; }
   .header .to_top a {
     color: #fefefe; }
   .header a:hover {
-    color: #2b75d8; }
+    color: #3c9fd8; }
 
 .top_text .blog_tittle {
   letter-spacing: 7px;
@@ -23,28 +23,54 @@
 
 .section_about {
   background-color: #cfcfcf; }
+  .section_about .photo img {
+    border: 3px solid #fefefe; }
+  .section_about .socials li a {
+    border: 1px solid #fefefe;
+    color: #fefefe; }
+    .section_about .socials li a:hover {
+      background-color: #3c9fd8; }
 
 .bg_dark {
   background-color: #191919;
   background: url("../../images/noize-dark.png");
   color: #fefefe; }
+  .bg_dark .short_line {
+    background-color: #fefefe; }
 
 .bg_light {
   background-color: #cfcfcf;
   background: url("../../images/noize-light.png");
   color: #191919; }
+  .bg_light .short_line {
+    background-color: #191919; }
+  .bg_light li a {
+    border: 1px solid #191919;
+    color: #191919; }
+    .bg_light li a:hover {
+      background-color: #3c9fd8; }
 
 .recipes_item_content {
   color: #fefefe; }
   .recipes_item_content a {
-    border: 1px solid #2b75d8;
+    border: 1px solid #3c9fd8;
     color: #fefefe;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s; }
     .recipes_item_content a:hover {
-      background-color: #2b75d8; }
+      background-color: #3c9fd8; }
   .recipes_item_content h3 {
     letter-spacing: 1px; }
+
+.section_sweet .controls button,
+.section_salty .controls button {
+  border: 1px solid #3c9fd8; }
+.section_sweet .controls button.active,
+.section_salty .controls button.active {
+  background: #3c9fd8; }
+
+.section_tittle {
+  letter-spacing: 2px; }
 
 /*# sourceMappingURL=purple.css.map */

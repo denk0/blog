@@ -89,34 +89,56 @@ section
   padding: 70px 0
   z-index: 100
   position: relative
-
+  .section_tittle
+    font-size: 30px
+    font-weight: 600
+  .section_description
+    font-size: 24px
+    margin-bottom: 10px
+  .short_line
+    border-radius: 10px
+    height: 2px
+    margin-bottom: 20px
+    margin-left: 20px
 .section_about
-
+  .short_line
+    margin-bottom: 40px
+  .photo
+    img
+      border-radius: 5px
+.socials
+  text-align: center
+  li
+    display: inline-block
+    width: 40px
+    height: 40px
+    padding: 5px
+    text-align: center
+    margin-bottom: 3px
+    a
+      display: inline-block
+      width: 40px
+      height: 40px
+      font-size: 16px
+      padding: 9px
+      border-radius: 50%
+      +transition(.3s)
+  .about_content
+    font-size: 16px
+    line-height: 20px
 .section_sweet,
 .section_salty
   .container
     .controls
       padding: 2%
-    label
-      font-weight: 300
-      margin: 0 .4em 0 0
-    h3
-      font-size: 20px
-      font-weight: 500
-      color: white
-      margin-bottom: .5em
     button
       display: inline-block
       padding: .4em .8em
-      background: #666
-      border: 0
-      color: #ddd
+      background: transparent
       font-size: 16px
-      font-weight: 300
+      font-weight: 600
       border-radius: 4px
       cursor: pointer
-    button.active
-      background: #68b8c4
     button:focus
       outline: 0 none
     button + label
@@ -181,10 +203,18 @@ section
 
 
 
-
 .footer
   z-index: 200
   padding: 40px 0
+  .copyright
+    font-size: 18px
+    line-height: 45px
+    margin-top: 2px
+    float: left
+    .fa-heart
+      color: red
+  .socials
+    float: right
 
 //$breakpoint-small: 480px;  For widths more than 480px
 //$breakpoint-medium: 768px;  For width more than 768px
@@ -200,6 +230,8 @@ section
     background-size: cover
 
 @media (max-width: 767px)
+  .socials
+    margin: 10px auto
   .header
     .toggle_menu
       display: block
