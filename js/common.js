@@ -24,6 +24,12 @@ $(document).ready(function(){
         $(".toggle_menu").toggleClass("active");
     });
 
+    $(".header_menu li a").click(function(){
+        $(".toggle_menu").toggleClass("active");
+        $(".header_menu").toggleClass("active");
+
+    });
+
     $(".to_top").click(function(){
         if ($(".toggle_menu").hasClass("active")) {
             $(".header_menu").toggleClass("active");

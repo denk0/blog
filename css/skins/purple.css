@@ -63,12 +63,12 @@
   .recipes_item_content h3 {
     letter-spacing: 1px; }
 
-.section_sweet .controls button,
-.section_salty .controls button {
+.section_sweet .container .controls button,
+.section_salty .container .controls button {
   border: 1px solid #3c9fd8; }
-.section_sweet .controls button.active,
-.section_salty .controls button.active {
-  background: #3c9fd8; }
+  .section_sweet .container .controls button.active,
+  .section_salty .container .controls button.active {
+    background: #3c9fd8; }
 
 .section_tittle {
   letter-spacing: 2px; }

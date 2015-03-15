@@ -82,10 +82,11 @@ $bg_light: #cfcfcf
     +kerning(1)
 .section_sweet,
 .section_salty
-  .controls
-    button
-      border: 1px solid $color
-    button.active
-      background: $color
+  .container
+    .controls
+      button
+        border: 1px solid $color
+        &.active
+          background: $color
 .section_tittle
   +kerning(2)

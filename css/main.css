@@ -136,7 +136,9 @@ section {
 
 .section_sweet .container .controls,
 .section_salty .container .controls {
-  padding: 2%; }
+  text-align: center;
+  padding: 2%;
+  margin-top: 30px; }
 .section_sweet .container button,
 .section_salty .container button {
   display: inline-block;
@@ -145,21 +147,22 @@ section {
   font-size: 16px;
   font-weight: 600;
   border-radius: 4px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 10px; }
 .section_sweet .container button:focus,
 .section_salty .container button:focus {
   outline: 0 none; }
 .section_sweet .container button + label,
 .section_salty .container button + label {
   margin-left: 1em; }
-.section_sweet .container .container .mix,
-.section_salty .container .container .mix {
-  width: 25%; }
 
 .recipes_item {
   display: none;
   padding: 0;
   position: relative; }
+  .recipes_item img {
+    min-height: 100% !important;
+    min-width: 100% !important; }
   .recipes_item .recipes_item_content {
     position: absolute;
     top: 0;
@@ -223,17 +226,39 @@ section {
   .footer .socials {
     float: right; }
 
-@media (max-width: 959px) {
+@media (min-width: 959px) and (max-width: 1145px) {
+  .teaser .top_text {
+    top: 20px;
+    line-height: 1.1; } }
+@media (max-width: 991px) {
   .teaser video {
     display: none; }
 
   .teaser {
     background: url("../images/teaser-bg-big.jpg") 0 0 no-repeat;
     -webkit-background-size: cover;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .about_content {
+    margin-top: 20px; }
+
+  .footer {
+    text-align: center; }
+    .footer .copyright {
+      float: none; }
+    .footer .socials {
+      float: none; } }
 @media (max-width: 767px) {
+  .container {
+    max-width: 95%; }
+
   .socials {
     margin: 10px auto; }
+
+  .teaser .top_text .blog_tittle {
+    white-space: normal;
+    margin-bottom: 40px;
+    font-size: 50px; }
 
   .header .toggle_menu {
     display: block; }
@@ -255,16 +280,24 @@ section {
         margin-top: 120px; }
     .header .header_menu li {
       float: none;
-      line-height: 75px;
       text-align: center;
       padding: 0; }
-      .header .header_menu li:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
+      .header .header_menu li a {
+        line-height: 75px;
+        display: block; }
+        .header .header_menu li a:hover {
+          background-color: rgba(255, 255, 255, 0.1); }
 
   .teaser {
     background: url("../images/teaser-bg.jpg") 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover; } }
+@media (max-width: 479px) {
+  .teaser .top_text .blog_tittle {
+    font-size: 30px; }
+
+  .teaser .top_text .blog_description {
+    font-size: 24px; } }
 @media (min-width: 960px) {
   .teaser {
     min-height: 750px; } }
